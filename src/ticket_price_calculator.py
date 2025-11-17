@@ -39,7 +39,7 @@ class TicketPriceCalculator:
             ValueError: If train not found or invalid route
         """
 
-        train = self.trains["12345"]
+        train = self.trains[train_number]
         return train.calculate_ticket_price(
             ticket_type=ticket_type,
             coach_type=coach_type,

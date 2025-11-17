@@ -1,3 +1,6 @@
+set shell := ["powershell.exe", "-c"]
+
+
 ARGS_TEST := env("_UV_RUN_ARGS_TEST", "")
 
 @_:

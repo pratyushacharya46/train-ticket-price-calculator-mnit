@@ -10,7 +10,7 @@ class TicketPriceCalculator:
     """Calculator for ticket prices across multiple trains."""
 
     def __init__(self, trains: list[Train]):
-        self.trains: dict[str, Train] = {train.train_number: train for train trains}
+        self.trains: dict[str, Train] = {train.train_number: train for train in trains}
 
     def calculate(
         self,

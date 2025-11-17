@@ -11,13 +11,13 @@ class PricingStrategy(ABC):
     @abstractmethod
     def calculate_price(
         self,
-        ticket_type: TicketType
+        ticket_type: TicketType,
         coach_type: CoachType,
         number_of_passengers: int,
         from_station: str,
         to_station: str,
         stations: list[str],
-    ) Decimal:
+    ) -> Decimal:
         pass
 
 

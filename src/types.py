@@ -5,7 +5,7 @@ from enum import Enum
 
 class CoachType(Enum):
     AC_3 = "3AC"
-  SLEEPER = "Sleeper"
+    SLEEPER = "Sleeper"
     AC_2 = "2AC"
     AC_1 = "1AC"
     GENERAL = "General"

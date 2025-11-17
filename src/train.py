@@ -14,6 +14,7 @@ class Train:
         pricing_strategy: PricingStrategy,
     ):
         self.train_number = train_number
+        self.stations = stations
         self.pricing_strategy = pricing_strategy
 
     def calculate_ticket_price(

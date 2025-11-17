@@ -182,6 +182,7 @@ class DistanceBasedPricingStrategy(PricingStrategy):
             *self.base_rate_per_km
             * self.coach_multiplier[coach_type]
             * self.ticket_multiplier[ticket_type]
+            * Decimal(number_of_passengers)
         )
 
         return total_price

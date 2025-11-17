@@ -85,7 +85,7 @@ class FixPricingStrategy(PricingStrategy):
         else:
             price_per_station = self.tatkal_pricing[coach_type]
 
-        total_price = price_per_station* number_of_stations * number_of_passengers
+        total_price = price_per_station*Decimal(number_of_stations)*Decimal(number_of_passengers)
 
         return total_price
 
@@ -178,7 +178,8 @@ class DistanceBasedPricingStrategy(PricingStrategy):
         )
 
         total_price = (
-            self.base_rate_per_km
+            distance
+            *self.base_rate_per_km
             * self.coach_multiplier[coach_type]
             * self.ticket_multiplier[ticket_type]
         )
